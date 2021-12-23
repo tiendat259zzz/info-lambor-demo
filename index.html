@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini Infomation Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="images/imglogo.png" class="logo">
+            <ul>
+                <li><a href="#" id="lb">Lamborghini Aventador Liberty Walk</a></li>
+                <li><a href="#" id="50">Lamborghini Aventador 50th anniversary </a></li>
+                <li><a href="#" id="s">Lamborghini Aventador S</a></li>
+                <li><a href="#" id="svj">Lamborghini Aventador SVJ</a></li>
+            </ul>
+            <a href="" class="btn">Reserve Now</a>
+        </nav>
+
+        <div class="info">
+            <div>
+                <h2  id="info-1">2.9 s</h2>
+                <p>100 kmph</p>
+            </div>
+            <div>
+                <h2  id="info-2">340 kmph</h2>
+                <p>Top Speed</p>
+            </div>
+            <div>
+                <h2  id="info-3">700 hp</h2>
+                <p>Horsepower</p>
+            </div>
+            <div class="line">
+            </div>
+            <div>
+                <h2 id="model">Lamborghini Aventador Liberty Walk</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var header = document.getElementById("header");
+        var lb = document.getElementById("lb");
+        var a50 = document.getElementById("50");
+        var s = document.getElementById("s");
+        var svj = document.getElementById("svj");
+        var model = document.getElementById("model");
+        var info1 = document.getElementById("info-1")
+        var info2 = document.getElementById("info-2")
+        var info3 = document.getElementById("info-3")
+
+        lb.onclick = function(){
+            header.style.backgroundImage = "url('images/imglbw.jpg')";
+            model.innerHTML = "Lamborghini Aventador Liberty Walk"
+            info1.innerHTML = "3.0 s"
+            info2.innerHTML = "370 kmph"
+            info3.innerHTML = "800 hp"
+        }
+
+        a50.onclick = function(){
+            header.style.backgroundImage = "url('images/img50.jpg')";
+            model.innerHTML = "Lamborghini Aventador 50th Anniversary"
+            info1.innerHTML = "3.6 s"
+            info2.innerHTML = "350 kmph"
+            info3.innerHTML = "700 hp"
+        }
+
+        s.onclick = function(){
+            header.style.backgroundImage = "url(images/imgs.jpg)";
+            model.innerHTML = "Lamborghini Aventador S"
+            info1.innerHTML = "3.2 s"
+            info2.innerHTML = "390 kmph"
+            info3.innerHTML = "750 hp"
+        }
+
+        svj.onclick = function(){
+            header.style.backgroundImage = "url(images/imgsvj.jpg)";
+            model.innerHTML = "Lamborghini Aventador SVJ"
+            info1.innerHTML = "2.9 s"
+            info2.innerHTML = "400 kmph"
+            info3.innerHTML = "850 hp"
+        }
+    </script>
+</body>
+</html>
